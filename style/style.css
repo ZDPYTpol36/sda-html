@@ -1,6 +1,6 @@
-body{
-    background-color: lightblue;
-}
+/*body{*/
+/*    background-color: lightblue;*/
+/*}*/
 
 p{
     color: orange;
@@ -8,4 +8,44 @@ p{
 
 div{
     font-size: 20px;
+}
+
+* {
+    background-color: cornflowerblue;
+}
+
+.my-class{
+    background-color: burlywood;
+}
+
+.my-second-class{
+    background-color: aqua;
+}
+
+.my-class.my-second-class{
+    background-color: chocolate;
+}
+
+#my-id{
+    background-color: aqua;
+}
+
+[href = 'https://www.w3schools.com']{
+    font-size: 40px;
+}
+
+div span{
+    background-color: blueviolet;
+}
+
+pre, a{
+    font-size: 30px;
+}
+
+div > span{
+    background-color: crimson;
+}
+
+span + p{
+    color: cyan;
 }
