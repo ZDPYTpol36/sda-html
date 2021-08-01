@@ -70,3 +70,33 @@ p{
 ul{
     list-style: lower-roman;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: rgba(236, 122, 129, 0.52);
+}
+
+a:visited{
+    color: rgba(220, 20, 60, 0.37);
+}
+
+a:active{
+    color: cyan;
+}
+
+a:hover{
+    margin-top: 5px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+p:first-letter{
+    font-size: 45px;
+}
+
+li:nth-child(even) {
+    background-color: crimson;
+}
