@@ -49,3 +49,24 @@ div > span{
 span + p{
     color: cyan;
 }
+
+html{
+    background-image: url("../landscape.jpg");
+    background-size: cover;
+}
+
+pre{
+    border-style: dashed;
+}
+
+p{
+    border-width: 5px;
+    border-color: rgba(158, 169, 177, 0.33);
+    border-style: solid;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+ul{
+    list-style: lower-roman;
+}
