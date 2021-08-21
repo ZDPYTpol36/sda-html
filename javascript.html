@@ -6,23 +6,25 @@
 </head>
 <body>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, ad consectetur cum, dolores dolorum ea eveniet excepturi, fuga harum ipsam ipsum laboriosam maiores numquam perferendis possimus provident repudiandae voluptatem!
-    <button type="button" onclick="alertTest()">Mój button</button>
 <script>
-    console.log('hello world!!!');
-    console.warn('hello world!!!');
-    console.error('hello world!!!');
-    // alert('hello world!!');
-    let var1 = 1;
-    let var2 = 1;
-    console.log(var1 == var2);
-    console.log(var1 === var2);
-    var2 = '1';
-    console.log(var1 == var2);
-    console.log(var1 === var2);
-
-    function alertTest(){
-        alert('Test');
-    }
+    (function () {
+        var letter = 'A';
+        if (letter.length) {
+            console.log(letter); // zwraca A
+            var letter = 'B';
+            console.log(letter); // zwraca B
+        }
+        console.log(letter); // zwraca B
+    })();
+    (function () {
+        let letter = 'A';
+        if (letter.length) {
+            // console.log(letter); // zwraca undefined
+            let letter = 'B';
+            console.log(letter); // zwraca B
+        }
+        console.log(letter); // zwraca A
+    })();
 
 </script>
 </body>
