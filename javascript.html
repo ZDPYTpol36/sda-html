@@ -6,9 +6,17 @@
 </head>
 <body>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, ad consectetur cum, dolores dolorum ea eveniet excepturi, fuga harum ipsam ipsum laboriosam maiores numquam perferendis possimus provident repudiandae voluptatem!
-    <p id="my-id">Przykładowy tekst</p>
+    <p>Foo bar!</p>
+    <button type="button" onclick="toggle()">Button</button>
 <script>
-    document.getElementById("my-id").innerText = "Example text";
+    function toggle(){
+        let element = document.getElementsByTagName('p')[0];
+        if(element.innerHTML === 'Foo bar!'){
+            element.innerHTML = 'Bar Foo!';
+        } else {
+            element.innerHTML = 'Foo bar!';
+        }
+    }
 </script>
 </body>
 </html>
